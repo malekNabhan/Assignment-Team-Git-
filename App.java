@@ -16,10 +16,11 @@ public class App {
         for (String book : books) {
             System.out.println(book);
         }
-        searchBook("Java Basics");
-        searchBook("Python");
+        
         removeBook("Clean Code");
         removeBook("Python");
+        searchBook("Java ");
+        searchBook("Clean");
 
 System.out.println("Books after removal:");
 for (String book : books) {
@@ -30,7 +31,7 @@ for (String book : books) {
 
     for (String book : books) {
 
-        if (book.equalsIgnoreCase(title)) {
+        if (book.toLowerCase().contains(title.toLowerCase())) {
             System.out.println("Book found: " + book);
             return;
         }
