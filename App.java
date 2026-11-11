@@ -18,6 +18,13 @@ public class App {
         }
         searchBook("Java Basics");
         searchBook("Python");
+        removeBook("Clean Code");
+        removeBook("Python");
+
+System.out.println("Books after removal:");
+for (String book : books) {
+    System.out.println(book);
+}
     }
     public static void searchBook(String title) {
 
@@ -31,5 +38,15 @@ public class App {
 
     System.out.println("Book not found!");
 }
+
+public static void removeBook(String title) {
+
+    if (books.removeIf(book -> book.equalsIgnoreCase(title))) {
+        System.out.println("Book removed: " + title);
+    } else {
+        System.out.println("Book not found!");
+    }
+}
+
 
 }
