@@ -5,8 +5,10 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("=== Library Tracker - Search Module ===");
-        // التجميع والتشغيل لخاصية البحث
+        // دالة البحث
         searchBook("Clean Code");
+        // دالة الحذف
+        removeBook("Clean code");
     }
 
     // دالة البحث عن كتاب بالاسم
