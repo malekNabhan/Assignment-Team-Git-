@@ -3,6 +3,12 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static void main(String[] args) {
+        System.out.println("=== Library Tracker - Search Module ===");
+        // التجميع والتشغيل لخاصية البحث
+        searchBook("Clean Code");
+    }
+
     // دالة البحث عن كتاب بالاسم
     public static boolean searchBook(String searchTitle) {
         System.out.println("Searching for book: " + searchTitle);
@@ -33,10 +39,10 @@ public class Main {
             return false;
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println("=== Library Tracker - Search Module ===");
-        // التجميع والتشغيل لخاصية البحث
-        searchBook("Clean Code");
+    public static boolean removeBook(String targetTitle) {
+        System.out.println("Initiating removal for: " + targetTitle);
+        return true;
     }
+
+    
 }
