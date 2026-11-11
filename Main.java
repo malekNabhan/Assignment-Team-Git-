@@ -41,7 +41,17 @@ public class Main {
     }
     public static boolean removeBook(String targetTitle) {
         System.out.println("Initiating removal for: " + targetTitle);
-        return true;
+        try {
+            java.io.File file = new java.io.File("books.json");
+            if (!file.exists()) {
+                System.out.println("Error: File not found.");
+                return false;
+            }
+            System.out.println("Checking database for " + targetTitle + "...");
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     
