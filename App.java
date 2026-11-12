@@ -6,6 +6,7 @@ public class App {
     static ArrayList<String> books = new ArrayList<>();
 
     public static void main(String[] args) {
+        print_banner();
 
         addBook("Java Programming");
         addBook("Python Basics");
@@ -77,5 +78,11 @@ public class App {
             System.out.println("Book not found!");
         }
     }
+    public static void print_banner() {
+    System.out.println("==============================");
+    System.out.println("     WELCOME TO OUR LIBRARY   ");
+    System.out.println("       MANAGED BY YHYA        ");
+    System.out.println("==============================");
+}
 
 }
