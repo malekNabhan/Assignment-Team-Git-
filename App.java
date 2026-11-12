@@ -42,6 +42,18 @@ for (String book : books) {
     System.out.println("Book not found!");
 }
 
+public static void addBook(String title) {
+
+    if (title == null || title.trim().isEmpty()) {
+        System.out.println("Book title cannot be empty!");
+        return;
+    }
+
+    books.add(title.trim());
+
+    System.out.println("Book added: " + title);
+}
+
 public static void removeBook(String title) {
 
     if (books.removeIf(book -> book.equalsIgnoreCase(title))) {
