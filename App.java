@@ -12,6 +12,7 @@ public class App {
         System.out.println("Main branch update");
 
         System.out.println("Rebase Exercise - Step 1");
+        System.out.println("Rebase Exercise - Step 2");
 
         addBook("Java Programming");
         addBook("Python Basics");
