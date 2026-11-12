@@ -78,10 +78,4 @@ public class App {
         }
     }
 
-    public static void print_banner() {
-    System.out.println("====================");
-    System.out.println("   Malek Ahmed Nabhan   ");
-    System.out.println("====================");
-}
-
 }
