@@ -29,9 +29,11 @@ for (String book : books) {
     }
     public static void searchBook(String title) {
 
+    String searchTitle = title.trim().toLowerCase();
+
     for (String book : books) {
 
-        if (book.toLowerCase().contains(title.toLowerCase())) {
+        if (book.toLowerCase().contains(searchTitle)) {
             System.out.println("Book found: " + book);
             return;
         }
