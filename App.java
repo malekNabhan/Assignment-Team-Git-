@@ -46,7 +46,7 @@ public class App {
     public static void addBook(String title) {
 
         if (title == null || title.trim().isEmpty()) {
-            System.out.println("Book title cannot be empty!");
+            System.out.println("Book title cannot be empty! Edit Edit");
             return;
         }
 
