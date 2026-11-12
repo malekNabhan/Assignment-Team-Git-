@@ -9,6 +9,7 @@ public class App {
         print_banner();
 
         print_banner();
+        System.out.println("Main branch update");
 
         addBook("Java Programming");
         addBook("Python Basics");
