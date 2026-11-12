@@ -22,7 +22,7 @@ public class App {
         searchBook("Java ");
         searchBook("Clean");
 
-System.out.println("Books after removal:");
+System.out.println("Books after deletion:");
 for (String book : books) {
     System.out.println(book);
 }
