@@ -54,6 +54,20 @@ public static void addBook(String title) {
     System.out.println("Book added: " + title);
 }
 
+public static void listBooks() {
+
+    System.out.println("Library Books:");
+
+    if (books.isEmpty()) {
+        System.out.println("No books available!");
+        return;
+    }
+
+    for (String book : books) {
+        System.out.println(book);
+    }
+}
+
 public static void removeBook(String title) {
 
     if (books.removeIf(book -> book.equalsIgnoreCase(title))) {
