@@ -81,16 +81,9 @@ public class App {
         }
     }
     public static void print_banner() {
-    System.out.println("==============================");
-    System.out.println("     WELCOME TO OUR LIBRARY   ");
-    System.out.println("       MANAGED BY YHYA        ");
-    System.out.println("==============================");
+    System.out.println("------------------------------");
+    System.out.println("       JAVA BOOK LIBRARY      ");
+    System.out.println("------------------------------");
 }
-
-    public static void print_banner() {
-        System.out.println("====================");
-        System.out.println("   MY JAVA LIBRARY  ");
-        System.out.println("====================");
-    }
 
 }
