@@ -7,6 +7,8 @@ public class App {
 
     public static void main(String[] args) {
 
+        print_banner();
+
         addBook("Java Programming");
         addBook("Python Basics");
 
@@ -76,6 +78,12 @@ public class App {
         } else {
             System.out.println("Book not found!");
         }
+    }
+
+    public static void print_banner() {
+        System.out.println("====================");
+        System.out.println("   MY JAVA LIBRARY  ");
+        System.out.println("====================");
     }
 
 }
